@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/101/three.min.js"></script>
     <script src="js/top.js"></script>
+    <script src="js/scroll.js"></script>
   </head>
   <body>
     <canvas id="canvas"></canvas>
@@ -18,10 +19,10 @@
         </div>
         <div id="top_footer">
           <ul class="link_lists">
-            <li class="link_list"><a href="" class="top_link">PROFILE</a></li>
-            <li class="link_list"><a href="" class="top_link">SKILL</a></li>
-            <li class="link_list"><a href="https://qiita.com/tech_kazuki" class="top_link" target="_blank">PRODUCTS</a></li>
-            <li class="link_list"><a href="https://twitter.com/tech_kazuki_49" class="top_link" target="_blank">CONTACT</a></li>
+            <li class="link_list">PROFILE</li>
+            <li class="link_list">SKILL</li>
+            <li class="link_list">PRODUCTS</li>
+            <li class="link_list">CONTACT</li>
           </ul>
         </div>
       </section>
@@ -33,12 +34,15 @@
           <div class="content">
             <div class="field">
               <h4 class="field_title">TECH::EXPERTにてプログラミングを学習！</h4>
-              <p class="field_text">1994年4月生まれ、25歳<br>
-                2019年3月から3ヶ月の集中学習でエンジニアになるための学習方法を身につけました！<br>
-                難しい内容を自力で調べながらの学習は、実際のエンジニアとしての仕事を意識しており、良い経験になりました。<br>
-                ロジカルに仕組みを捉え問題解決するのは、苦しくも楽しい3ヶ月でした！<br>
-                コツコツと<a href="https://qiita.com/tech_kazuki" class="product_link" target="_blank">技術ブログ</a>も書いています。
-              </p>
+              <div class="profile_box">
+                <img src="images/smile2.png" class="my_image">
+                <p class="profile_text">秋山一希 1994年4月生まれ、25歳<br>
+                  2019年3月から3ヶ月の集中学習でエンジニアになるための学習方法を身につけました！<br>
+                  難しい内容を自力で調べながらの学習は、実際のエンジニアとしての仕事を意識しており、良い経験になりました。<br>
+                  ロジカルに仕組みを捉え問題解決するのは、苦しくも楽しい3ヶ月でした！<br>
+                  コツコツと<a href="https://qiita.com/tech_kazuki" class="product_link" target="_blank">技術ブログ</a>も書いています。
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -51,7 +55,7 @@
           <div class="content">
             <div class="field">
               <h4 class="field_title">自身が3ヶ月の学習期間に触れた技術</h4>
-              <p class="field_text">どの技術もこれから学習をして自分のものにしていきます。現在は基本情報技術者の学習も進めています。</p>
+              <p class="field_text">どの技術も少し触れて使ってみた程度です。これからたくさん学習して、自分のものにしていきます。現在は基本情報技術者の学習も進めています。</p>
               <div class="field_images">
                 <img class="field_image" src="images/html5.png">
                 <img class="field_image" src="images/css3.png">
@@ -97,10 +101,10 @@
               <h4 class="field_title">お絵かきアプリ</h4>
               <div class="field_top">
                 <p class="field_text">
-                  github：<a href="https://github.com/tech-kazuki/draw-post" class="product_link" target="_blank">github.com/tech-kazuki/draw-post</a><br>
-                  サイトアクセス：<a href="https://drawposts.herokuapp.com/" class="product_link" target="_blank">drawposts.herokuapp.com</a><br>
+                  github：<a href="https://github.com/tech-kazuki/post-picture" class="product_link" target="_blank">github.com/tech-kazuki/post-picture</a><br>
+                  サイトアクセス：<a href="https://post-pict.herokuapp.com/" class="product_link" target="_blank">post-pict.herokuapp.com</a><br>
                   開発経験：herokuへのデプロイ、canvasを用いた描画<br><br>
-                  JavaScriptを勉強しようと考え、canvasを用いたアプリケーションの作成を行いました。<br>
+                  JavaScriptを使って面白いアプリを作ろう！と考え、canvasを用いたアプリケーションの作成を行いました。<br>
                   デプロイしたものをTwitterにて紹介したところ、数人に使っていただきました。<br>
                   「楽しいからやってみて！」というリツイートなども！<br>
                   初めて自作したアプリケーションでしたが、実際にユーザーからレビューをいただくことで改善点を見つけることができました。
@@ -113,7 +117,7 @@
               <p class="field_text">
                 現在ご覧いただいているWebページそのものです。<br>
                 開発経験：three.jsを用いた簡単な３D描画、マテリアルデザインの採用<br><br>
-                開発経験や今後の開発経験をまとめていこうと作成。<br>
+                過去の開発経験をまとめるために作成。<br>
                 「かっこいいポートフォリオ作ってみたい」＋「WebGLを学習してみたい」という気持ちから作成<br>
                 今後はライブラリなしでWebGLを扱えるよう学習したいです。<br>
               </p>
@@ -128,10 +132,14 @@
         <section class="contents">
           <div class="content">
             <div class="field">
-              <h4 class="field_title">転職活動中です！</h4>
-              <p class="field_text">
-                ツイッターからDMお待ちしています！
-              </p>
+              <div class="contact_box">
+                <h4 class="field_title">転職活動中です！</h4>
+                <img src="images/prof_20181201_180633.png" class="my_image">
+                <p class="field_text">
+                  ツイッターからDMお待ちしています！<br>
+                  <a href="https://twitter.com/tech_kazuki" target="_blank" class="product_link">@tech_kazuki</a>
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -1,3 +1,7 @@
+body {
+  color: #3c3c3c;
+}
+
 .profile_content {
   padding: 40px 100px;
   background-color: #e1e2e1;
@@ -34,8 +38,8 @@
 }
 
 .field_title {
-  font-size: 24px;
-  font-weight: lighter;
+  font-size: 26px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -57,6 +61,24 @@
   height: 150px;
 }
 
+.profile_box {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.my_image {
+  width: 300px;
+  height: 300px;
+}
+
+.profile_text {
+  display: block;
+  padding: 20px;
+  line-height: 3rem;
+  font-size: 20px;
+}
+
 .product_image {
   width: 500px;
   height: auto;
@@ -69,4 +91,8 @@
 
 .get_space {
   margin: 0 15px;
+}
+
+.contact_box {
+  text-align: center;
 }
