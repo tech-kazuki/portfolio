@@ -22,7 +22,8 @@
 
 h1 {
   display: inline;
-  font-size: 96px;
+  font-size: 66px;
+  padding: 0 20px;
   font-family: 'Kanit', sans-serif;
   letter-spacing: 10px;
   background-color: #585858;
@@ -44,15 +45,15 @@ h1 {
 }
 
 .link_list {
-  margin: 0 15px;
+  margin: 10px 30px;
   padding: 5px 10px;
-  height: 100px;
-  line-height: 100px;
+  height: 80px;
+  line-height: 70px;
   position: relative;
   border: 1px solid #000;
   background-color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 600;
   cursor: pointer;
 }
